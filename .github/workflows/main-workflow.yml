@@ -3,9 +3,10 @@ on:
   push:
     branches:
       - main
+      
 jobs:
   trigger-shared-workflow:
-    uses: Auditor8/GHA/.github/workflows/shared-workflow.yml@main
+    uses: Auditore8/GHA/.github/workflows/shared-workflow.yml@main
     with:
       some_parameter: 'example_value'
 
