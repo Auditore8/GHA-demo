@@ -6,5 +6,12 @@ on:
       - main
 
 jobs:
-  shared:
-    uses: Auditore8/GHA/.github/workflows/shared-workflow.yml@main
+  trigger-shared-workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Shared Workflow
+        uses: <username>/<shared-repo-name>/.github/workflows/shared-workflow.yml@main
+        with:
+          some_parameter: 'example_value'
+
