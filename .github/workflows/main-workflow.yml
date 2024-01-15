@@ -8,6 +8,6 @@ jobs:
   trigger-shared-workflow:
     uses: Auditore8/GHA/.github/workflows/shared-workflow.yml@main
     with:
-      some_parameter: 'example_value'
+      username: 'Tom'
 
 
