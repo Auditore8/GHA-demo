@@ -2,8 +2,7 @@ name: Main Workflow
 on:
   push:
     branches:
-      - main
-      
+      - main      
 jobs:
   trigger-shared-workflow:
     uses: Auditore8/GHA/.github/workflows/shared-workflow.yml@main
