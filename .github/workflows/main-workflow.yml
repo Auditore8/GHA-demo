@@ -1,17 +1,12 @@
 name: Main Workflow
-
 on:
   push:
     branches:
       - main
-
 jobs:
   trigger-shared-workflow:
-    runs-on: ubuntu-latest
+    uses: Auditor8/GHA/.github/workflows/shared-workflow.yml@main
+    with:
+      some_parameter: 'example_value'
 
-    steps:
-      - name: Trigger Shared Workflow
-        uses: <username>/<shared-repo-name>/.github/workflows/shared-workflow.yml@main
-        with:
-          some_parameter: 'example_value'
 
